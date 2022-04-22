@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Karla:wght@800&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #1C1C1C;
+    color: #4ADF86;
+}
+
+#main {
+    background: #1F2937;
+    width: 550px;
+    height: 550px;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#main1 {
+    line-height: 40px;
+    letter-spacing: -5%;
+    /* margin-left: 10%; */
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+#title1 {
+    color: #FFF;
+    font-family: Karla;
+    font-weight: 800;
+    font-size: 40px;
+    display: block;
+}
+
+#title2 {
+    color: #10B981;
+    font-family: Karla;
+    font-weight: 800;
+    font-size: 40px;
+    display: block;
+}
+
+#title3 {
+    color: #6B7280;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#flash {
+    width: 20px;
+    height: 20px;
+}
+
+button,
+button:focus {
+    width: 223px;
+    height: 42px;
+    background: #10B981;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+button:hover {
+    background: #4ADF86;
+    transition: background 20ms;
+}
+
+hr {
+    position: absolute;
+    width: 446px;
+    left: 10%;
+    top: 62%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2F3E53;
+    height: px;
+
+}
+
+#slider {
+    position: absolute;
+    left: 55%;
+    top: 53%;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    background: #FFF;
+    height: 5px;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+#slider:hover {
+    opacity: 1;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #10B981;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#rangeVal,
+#rangeVal::placeholder {
+    position: absolute;
+    left: 80%;
+    top: 51%;
+    border: none;
+    outline: none;
+    background: transparent;
+    resize: none;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 25px;
+    color: #10B981;
+}
+
+#main2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 27px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.pass {
+    width: 211px;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+    opacity: 0.7;
+    transition: opacity .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.load {
+    width: 20px;
+    height: 5px;
+}
+
+.pass:hover {
+    opacity: 1;
+}
